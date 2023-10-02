@@ -887,6 +887,10 @@ a {
   align-items: center;
 }
 
+.header-wrapper .logo {
+  width: 20rem;
+}
+
 .header-wrapper .logo a {
   display: block;
 }
@@ -3347,3 +3351,159 @@ ol {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Footer */
+
+footer {
+  background-color: rgb(17, 17, 17);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer>* {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer div.logo {
+  text-align: center;
+}
+
+footer div.logo img {
+  width: 30rem;
+}
+
+div.social-links a {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: rgb(17, 17, 17) !important;
+  background-color: #A7A9AC;
+}
+
+div.social-links * {
+  text-decoration: none;
+}
+
+div.social-links a:hover {
+  color: white !important;
+}
+
+div.social-links a.fa-facebook:hover {
+  background-color: #4267B2;
+}
+
+div.social-links a.fa-instagram:hover {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%) !important;
+}
+
+div.social-links a.fa-twitter:hover {
+  background-color: #1DA1F2;
+}
+
+div.social-links a.fa-linkedin:hover {
+  background-color: #1DA1F2
+}
+
+div.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.social-links a {
+  margin: 0.5rem;
+}
+
+footer div.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  color: white;
+}
+
+footer div.container>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer div.container a {
+  color: white;
+  text-decoration: none;
+}
+
+footer div.container div.quick-links {
+  border-right: 2px solid white;
+}
+
+footer div.container>div.quick-links>* {
+  margin: 0.5rem;
+}
+
+footer div.container div.quick-links p,
+footer div.container div h3 {
+  margin: 0.7rem;
+}
+
+footer div.container>div>div {
+  margin: 0.7rem;
+}
+
+footer div.container>div>div>* {
+  margin: 0.5rem;
+}
+
+footer div.container img {
+  border: 4px solid white;
+  border-radius: 50%;
+  width: 10rem;
+}
+
+footer div.contact {
+  background-color: transparent;
+}
+
+footer h3 {
+  color: white;
+}
+
+@media screen and (max-width: 540px) {
+  footer div.logo img {
+      width: 20rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  footer div.container {
+      grid-template-columns: auto auto;
+  }
+
+  footer div.quick-links {
+      grid-column: span 2;
+      border-right: none !important;
+      margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  footer div.container {
+      grid-template-columns: auto;
+  }
+
+  footer div.quick-links {
+      grid-column: span 1;
+  }
+
+  footer div.container>div {
+      margin-bottom: 3rem;
+  }
+}
+
+/* Footer Ends */
